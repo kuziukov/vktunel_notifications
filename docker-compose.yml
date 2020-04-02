@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  notification:
+    build:
+      context: .
+    command: python app.py
+    env_file:
+      - .env
+    network_mode: host
