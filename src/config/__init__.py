@@ -1,0 +1,8 @@
+from .env import (
+    REDIS_PORT,
+    REDIS_HOST,
+    REDIS_PASSWORD
+)
+
+
+NOTIFICATION_STORE_URI = f'redis://:{REDIS_PASSWORD}@{REDIS_HOST}:{REDIS_PORT}/1'
